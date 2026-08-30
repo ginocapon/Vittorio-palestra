@@ -12,51 +12,65 @@
 | Età | **54** |
 | Altezza | **180 cm** |
 | Peso | **78 kg** |
+| Livello | **Neofita** (gambe più avanzate, upper da costruire) |
 | Infortuni | **2 ernie lombari** — solo macchine/cavi, schiena appoggiata |
 | Obiettivo | Ricostruzione corporea, surplus leggero, **~60% volume parte alta** |
-| Gambe | Più avanzate → **mantenimento** (pressa, leg curl, extension) |
 | Frequenza | **3 sedute/settimana** · A+B · B+C · A+C |
 
 ---
 
-## 2. Settimana tipo
+## 2. Schede trimestrali (4 × 13 settimane)
+
+**Principio neofita:** stessi esercizi per tutto il trimestre. La progressione è il **volume di lavoro** (serie e ripetizioni), non i kg.
+
+| Trimestre | Periodo | Volume regime |
+|-----------|---------|---------------|
+| **T1 · Base** | set–nov 2026 | Serie in scheda = target sett. 8–12 |
+| **T2 · Volume +** | dic–feb 2027 | T1 + **+1 serie** sui fondamentali * |
+| **T3 · Picco upper** | mar–mag 2027 | T2 + **+1 serie** su complementari upper |
+| **T4 · Consolidamento** | giu–ago 2027 | **−15% volume**, RIR 3, tecnica |
+
+**Deload obbligatori:** settimane **13, 26, 39, 52** (−40% serie).
+
+### Progressione settimanale (ogni trimestre)
+
+| Settimane | Serie | RIR | Note |
+|-----------|-------|-----|------|
+| 1–2 | 2/esercizio | 4 | Impara macchine |
+| 3–4 | 2–3 | 3–4 | Aggiungi volume, non kg |
+| 5–6 | ~80% regime | 3 | Avvicinamento regime |
+| 7–8 | 100% regime | 2–3 | Primo picco trimestre |
+| 9 | −25% | 3 | Deload parziale |
+| 10–12 | 100% regime | 2 | Picco volume trimestre |
+| 13 | −40% | 4–5 | Chiusura trimestre |
+
+**Ordine progressione carico:** 1) serie 2) ripetizioni nel range 3) +2,5 kg macchina solo se tutto pulito.
+
+---
+
+## 3. Settimana tipo
 
 | Seduta | Contenuto |
 |--------|-----------|
-| **AB** | Spinta parte alta (petto, spalle, tricipiti) + 2 esercizi gambe leggero |
-| **BC** | Tirata parte alta (dorso, bicipiti, posteriori) + gambe leggero |
-| **AC** | Parte alta completa — **solo upper**, massimo stimolo |
-
-Lun AB · Mer BC · Ven AC (o Mar/Gio/Sab).
+| **AB** | Spinta parte alta + 2 esercizi gambe leggero |
+| **BC** | Tirata parte alta + gambe leggero |
+| **AC** | Solo upper — massimo stimolo parte alta |
 
 ---
 
-## 3. Regole schiena (obbligatorie)
+## 4. Regole schiena (obbligatorie)
 
-- **Vietati:** squat bilanciere, stacchi, good morning, crunch, sit-up, iperestensioni lombari, rematore libero piegato, military in piedi pesante
-- **Preferiti:** chest press macchina, lat machine, rematore macchina petto appoggiato, leg press, leg curl/extension
-- **Core:** dead bug, pallof press, bird dog — no flessione lombare carica
-- **Stop** immediato se dolore lombare; RIR minimo 2 sulle prime 4 settimane
-
----
-
-## 4. Nutrizione
-
-- Non calare peso
-- Surplus **+200–300 kcal** vs mantenimento
-- Proteine **1,6–2 g/kg** (125–155 g/die)
-- Idratazione e sonno 7–8 h
+- **Vietati:** squat, stacchi, crunch, iperestensioni, rematore libero piegato
+- **Core:** dead bug, pallof press, bird dog
+- **Stop** se dolore lombare
 
 ---
 
-## 5. PDF e schede
+## 5. Sync dati
 
-| Cosa | Path |
-|------|------|
-| Home / ciclo | `/` · `/ciclo/` |
-| Scheda sessione | `/admin/sessione/?ciclo=costruzione&sessione=ab\|bc\|ac` |
-| PDF sessione | `/admin/sessione/pdf/?ciclo=costruzione&sessione=ab` |
-
-Dati: `admin/data/blocco-1-fase1.json`, `admin/data/macrociclo-2026-2027.json`
+```bash
+node tools/sync-vittorio-trimestri.mjs   # 4 trimestri → macrociclo
+node tools/sync-blocco1-macrociclo.mjs   # solo T1 da blocco-1-fase1.json
+```
 
 Deploy: `https://ginocapon.github.io/vittorio-palestra/`

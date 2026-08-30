@@ -43,12 +43,12 @@
     var p = data.macrociclo.profilo || {};
     var ul = el("ul", { className: "ciclo-principi__list" });
     [
-      "3 allenamenti: A+B · B+C · A+C. Tipo Lun A+B · Mer B+C · Ven A+C.",
-      "Parte alta ~60% del volume settimanale: petto, schiena, spalle e braccia 2×/sett.",
-      "Gambe in mantenimento (pressa, leg curl, extension) — già più avanzate.",
-      "Due ernie lombari: solo macchine e cavi, schiena appoggiata. No squat, stacchi, crunch.",
-      "Settimane 1–4: ingresso graduale (RIR 3–4). Surplus leggero per ricostruzione corporea.",
-      "Ogni fase dura 13 settimane. Settimana 13/26/39/52 = deload (−40% volume).",
+      "Neofita: 4 trimestri × 13 settimane. Stessi esercizi per trimestre.",
+      "Progressione = volume di lavoro (serie × rep), non inseguire i kg.",
+      "Sett. 1–2: 2 serie/esercizio · sett. 7–12: regime trimestre · sett. 13/26/39/52: deload.",
+      "3 allenamenti: A+B · B+C · A+C. Parte alta ~60%, gambe mantenimento.",
+      "Due ernie lombari: solo macchine/cavi. No squat, stacchi, crunch.",
+      "T1 base → T2 +1 serie sui * → T3 +1 serie upper → T4 consolidamento (−15% volume).",
       "PDF anonimo: Atleta e kg a penna."
     ].forEach(function (t) {
       ul.appendChild(el("li", { text: t }));

@@ -1,11 +1,11 @@
 {
-  "nome": "Ciclo 1 — Ricostruzione",
-  "settimane": 13,
+  "nome": "Anno 2026–2027 · 4 trimestri neofita",
+  "settimane": 52,
   "fase": "costruzione",
-  "split": "3 giorni: A+B / B+C / A+C",
+  "split": "3 giorni: A+B / B+C / A+C · schede trimestrali",
   "inizio": "2026-09-01",
-  "fine": "2026-11-30",
-  "progressione": "Settimane 1–4: ingresso RIR 3–4, carichi conservativi. Settimane 5–8: RIR 2→1 se schiena ok. Settimana 9: −25% volume. Settimane 10–12: picco controllato. Settimana 13: deload −40%.",
+  "fine": "2027-08-31",
+  "progressione": "Neofita: progressione = volume di lavoro (serie e ripetizioni), non inseguire i kg. Ogni trimestre (13 sett.): stessi esercizi, volume crescente sett. 1→12, deload sett. 13/26/39/52. T1 base → T2 +1 serie sui * → T3 +1 serie upper → T4 consolidamento.",
   "settimana_tipo": [
     { "giorno": "Lunedì", "scheda_id": "ab", "focus": "Spinta parte alta + gambe leggero" },
     { "giorno": "Martedì", "scheda_id": null, "focus": "Riposo o camminata 30 min" },
@@ -15,5 +15,5 @@
     { "giorno": "Sabato", "scheda_id": null, "focus": "Riposo" },
     { "giorno": "Domenica", "scheda_id": null, "focus": "Riposo" }
   ],
-  "note": "Surplus +200–300 kcal, proteine 125–155 g/die. Stop se dolore lombare. Solo macchine e cavi."
+  "note": "Sett. 1–2: 2 serie/esercizio. Sett. 7–12: regime trimestre. Surplus leggero, non calare peso."
 }

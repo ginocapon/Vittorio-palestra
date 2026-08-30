@@ -26,9 +26,9 @@ function toMacroEx(ex) {
     recupero: ex.recupero,
     rir: ex.rir || "vedi regole blocco",
     tempo: ex.tempo,
-    progressione: ex.progressionePrincipale || false,
+    progressione: Boolean(ex.progressione),
     figura: ex.figura || null,
-    note: [ex.progressione, ex.note].filter(Boolean).join(" · ") || null,
+    note: ex.note || null,
   };
 }
 

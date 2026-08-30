@@ -3,12 +3,13 @@
   "eta": 54,
   "altezza_cm": 180,
   "peso_kg": 78,
-  "livello": "intermedio gambe · parte alta da potenziare",
+  "livello": "neofita · gambe più avanzate · parte alta da costruire",
   "allenamenti_settimana": 3,
-  "obiettivo": "Ricostruzione corporea: surplus leggero, ipertrofia parte alta ~60% volume. Gambe in mantenimento.",
+  "obiettivo": "Ricostruzione corporea neofita: 4 trimestri progressivi per volume di lavoro. Surplus leggero. Parte alta ~60%.",
   "attrezzatura": "palestra commerciale — priorità macchine e cavi",
   "limitazioni": "Due ernie lombari: no squat/stacco/crunch/iperestensioni. Solo movimenti con schiena appoggiata o neutra. Stop se dolore.",
   "durata_seduta_min": 70,
-  "split": "A+B / B+C / A+C · 3 sedute",
-  "note": "Sito personale noindex. Surplus +200–300 kcal, proteine 125–155 g/die. Non calare peso."
+  "split": "A+B / B+C / A+C · 3 sedute · schede trimestrali",
+  "progressione": "Volume lavoro (serie × rep) prima dei kg. Stessi esercizi per 13 settimane, poi trimestre successivo.",
+  "note": "Surplus +200–300 kcal, proteine 125–155 g/die. Non calare peso."
 }
