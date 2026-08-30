@@ -1,0 +1,75 @@
+﻿name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site artifact
+        env:
+          BASE: /Vittorio-palestra
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          tar -C . --exclude='.git' --exclude='.github' --exclude='_site' \
+            --exclude='node_modules' --exclude='tools' --exclude='.cursor' \
+            --exclude='package.json' --exclude='SKILL.md' --exclude='docs' \
+            --exclude='README.md' -cf - . | tar -C _site -xf -
+
+          test -f _site/index.html
+
+          # GitHub project pages: https://ginocapon.github.io/Vittorio-palestra/
+          find _site \( -name '*.html' -o -name '*.js' \) -print0 | xargs -0 sed -i \
+            -e "s|href=\"/css/|href=\"${BASE}/css/|g" \
+            -e "s|src=\"/css/|src=\"${BASE}/css/|g" \
+            -e "s|href=\"/admin/|href=\"${BASE}/admin/|g" \
+            -e "s|href=\"/js/|href=\"${BASE}/js/|g" \
+            -e "s|src=\"/js/|src=\"${BASE}/js/|g" \
+            -e "s|src=\"/admin/|src=\"${BASE}/admin/|g" \
+            -e "s|href=\"/ciclo/|href=\"${BASE}/ciclo/|g" \
+            -e "s|href=\"/schede/|href=\"${BASE}/schede/|g" \
+            -e "s|href=\"/allenamenti/|href=\"${BASE}/allenamenti/|g" \
+            -e "s|href=\"/trasparenza-ai/|href=\"${BASE}/trasparenza-ai/|g" \
+            -e "s|href=\"/privacy/|href=\"${BASE}/privacy/|g" \
+            -e "s|href=\"/cookie/|href=\"${BASE}/cookie/|g" \
+            -e "s|href=\"/favicon|href=\"${BASE}/favicon|g" \
+            -e "s|src=\"/favicon|src=\"${BASE}/favicon|g" \
+            -e "s|href=\"/\"|href=\"${BASE}/\"|g"
+
+          echo "Built _site with base ${BASE}"
+          ls -la _site/index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

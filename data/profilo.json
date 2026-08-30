@@ -1,0 +1,15 @@
+{
+  "nome": "Vittorio",
+  "eta": 54,
+  "altezza_cm": 180,
+  "peso_kg": 78,
+  "livello": "neofita · gambe più avanzate · parte alta da costruire",
+  "allenamenti_settimana": 3,
+  "obiettivo": "Ricostruzione corporea neofita: 4 trimestri progressivi per volume di lavoro. Surplus leggero. Parte alta ~60%.",
+  "attrezzatura": "palestra commerciale — priorità macchine e cavi",
+  "limitazioni": "Due ernie lombari: no squat/stacco/crunch/iperestensioni. Solo movimenti con schiena appoggiata o neutra. Stop se dolore.",
+  "durata_seduta_min": 70,
+  "split": "A+B / B+C / A+C · 3 sedute · schede trimestrali",
+  "progressione": "Volume lavoro (serie × rep) prima dei kg. Stessi esercizi per 13 settimane, poi trimestre successivo.",
+  "note": "Surplus +200–300 kcal, proteine 125–155 g/die. Non calare peso."
+}

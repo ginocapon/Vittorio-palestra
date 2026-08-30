@@ -1,0 +1,19 @@
+{
+  "nome": "Anno 2026–2027 · 4 trimestri neofita",
+  "settimane": 52,
+  "fase": "costruzione",
+  "split": "3 giorni: A+B / B+C / A+C · schede trimestrali",
+  "inizio": "2026-09-01",
+  "fine": "2027-08-31",
+  "progressione": "Neofita: progressione = volume di lavoro (serie e ripetizioni), non inseguire i kg. Ogni trimestre (13 sett.): stessi esercizi, volume crescente sett. 1→12, deload sett. 13/26/39/52. T1 base → T2 +1 serie sui * → T3 +1 serie upper → T4 consolidamento.",
+  "settimana_tipo": [
+    { "giorno": "Lunedì", "scheda_id": "ab", "focus": "Spinta parte alta + gambe leggero" },
+    { "giorno": "Martedì", "scheda_id": null, "focus": "Riposo o camminata 30 min" },
+    { "giorno": "Mercoledì", "scheda_id": "bc", "focus": "Tirata parte alta + gambe leggero" },
+    { "giorno": "Giovedì", "scheda_id": null, "focus": "Riposo o mobilità dolce" },
+    { "giorno": "Venerdì", "scheda_id": "ac", "focus": "Parte alta completa (solo upper)" },
+    { "giorno": "Sabato", "scheda_id": null, "focus": "Riposo" },
+    { "giorno": "Domenica", "scheda_id": null, "focus": "Riposo" }
+  ],
+  "note": "Sett. 1–2: 2 serie/esercizio. Sett. 7–12: regime trimestre. Surplus leggero, non calare peso."
+}

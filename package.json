@@ -1,0 +1,11 @@
+{
+  "name": "vittorio-palestra",
+  "private": true,
+  "description": "Gestione scheda allenamento — Vittorio",
+  "type": "module",
+  "scripts": {
+    "macro:sync": "node tools/sync-blocco1-macrociclo.mjs",
+    "macro:trimestri": "node tools/sync-vittorio-trimestri.mjs",
+    "macro:verifica": "node tools/verifica-macrociclo.mjs"
+  }
+}

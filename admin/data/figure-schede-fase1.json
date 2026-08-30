@@ -1,0 +1,23 @@
+{
+  "generatedFrom": "blocco-1-fase1.json",
+  "stile": "SVG tecnico",
+  "rows": [
+    { "sessione": "AB", "idEsercizio": "fig-chest", "nome": "Chest press inclinata macchina", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-chest", "pathImgWebp": null, "briefVisuale": "Schiena al pannello, spinta controllata.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-croci", "nome": "Croci ai cavi / Pec deck", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-croci", "pathImgWebp": null, "briefVisuale": "Petto alto, gomiti leggermente flessi.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-lento", "nome": "Shoulder press macchina seduto", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lento", "pathImgWebp": null, "briefVisuale": "Seduto, schiena al pannello.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-alzate", "nome": "Alzate laterali", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-alzate", "pathImgWebp": null, "briefVisuale": "Gomiti leggermente flessi.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-pushdown", "nome": "Pushdown tricipiti", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pushdown", "pathImgWebp": null, "briefVisuale": "Gomiti fermi ai fianchi.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-pressa", "nome": "Leg press 45°", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pressa", "pathImgWebp": null, "briefVisuale": "Schiena appoggiata, piedi alti.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-legcurl", "nome": "Leg curl seduto", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-legcurl", "pathImgWebp": null, "briefVisuale": "Femorali isolati.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AB", "idEsercizio": "fig-catchball", "nome": "Dead bug", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-catchball", "pathImgWebp": null, "briefVisuale": "Core anti-estensione.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-lat-neutro", "nome": "Lat machine presa neutra", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lat-neutro", "pathImgWebp": null, "briefVisuale": "Petto alto, cosce bloccate.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-rematore", "nome": "Rematore macchina", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-rematore", "pathImgWebp": null, "briefVisuale": "Petto appoggiato, busto fissato.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-reverse-pec", "nome": "Reverse pec deck", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-reverse-pec", "pathImgWebp": null, "briefVisuale": "Deltoide posteriore.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-curl-ez", "nome": "Curl manubri seduto", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-ez", "pathImgWebp": null, "briefVisuale": "Schiena appoggiata.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-curl-mart", "nome": "Curl al cavo", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-mart", "pathImgWebp": null, "briefVisuale": "Bicipiti al cavo.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-legext", "nome": "Leg extension", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-legext", "pathImgWebp": null, "briefVisuale": "Quadricipiti isolati.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "BC", "idEsercizio": "fig-polpacci", "nome": "Calf seduto", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-polpacci", "pathImgWebp": null, "briefVisuale": "Polpacci seduto.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AC", "idEsercizio": "fig-lat", "nome": "Lat machine presa larga", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lat", "pathImgWebp": null, "briefVisuale": "Presa larga, petto alto.", "stile": "SVG tecnico", "dataAi": null },
+    { "sessione": "AC", "idEsercizio": "fig-curl-scott", "nome": "Curl Scott", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-scott", "pathImgWebp": null, "briefVisuale": "Braccia appoggiate.", "stile": "SVG tecnico", "dataAi": null }
+  ]
+}

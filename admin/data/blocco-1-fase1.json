@@ -1,0 +1,471 @@
+{
+  "id": "costruzione",
+  "codice": "FASE 1",
+  "tipo": "NEOFITA · RICOSTRUZIONE · PARTE ALTA PRIORITARIA",
+  "nome": "Trimestre 1 · Base neofita",
+  "inizio": "2026-09-01",
+  "fine": "2026-11-30",
+  "settimane": 13,
+  "frequenza": "3 allenamenti/settimana · A+B → B+C → A+C · scheda trimestrale",
+  "durataSeduta": "obiettivo 50–55 min (sett. 1–4) · 65–75 min a regime · tetto 80 min",
+  "guida": "Neofita 54 anni, 2 ernie lombari. Stessi esercizi per tutto il trimestre: la progressione è il VOLUME DI LAVORO (serie e ripetizioni), non inseguire subito i kg. Prima si aggiungono serie, poi si sale di poco in macchina solo con tecnica solida. Surplus leggero (+200–300 kcal).",
+  "schedaIntro": "Trimestre 1 · 13 settimane · AB / BC / AC. Serie in scheda = target sett. 8–12. Sett. 1–4: partire con 2 serie/esercizio. Parte alta ~60% volume; gambe mantenimento.",
+  "progressioneCarico": {
+    "principio": "Per neofita: carico = volume di lavoro (serie × rip × kg). Ordine: 1) imparare macchine 2) aggiungere serie 3) salire nel range rep 4) solo alla fine +2,5 kg macchina.",
+    "trimestre": "Stessi esercizi 13 settimane. Non si cambia lista fino al trimestre successivo.",
+    "traTrimestri": "T1 base → T2 +1 serie sui fondamentali * → T3 +1 serie su upper complementari → T4 consolidamento (−15% volume, tecnica)"
+  },
+  "progressioneVolumeSettimanale": [
+    { "settimane": "1–2", "serie": "2 per esercizio (≈50% regime)", "rir": "4", "kg": "Leggero, impara macchine", "nota": "Durata 45–55 min" },
+    { "settimane": "3–4", "serie": "2–3 (≈65% regime)", "rir": "3–4", "kg": "Stesso peso o +1 tacca se pulito", "nota": "Aggiungi 1 serie solo sui *" },
+    { "settimane": "5–6", "serie": "3 sui *, 2 sugli altri (≈80%)", "rir": "3", "kg": "Non salire kg ogni settimana", "nota": "Upper prioritario" },
+    { "settimane": "7–8", "serie": "Regime scheda (100%)", "rir": "2–3", "kg": "+2,5 kg solo se tutte le rep pulite", "nota": "Primo picco volume trimestre" },
+    { "settimane": "9", "serie": "−25% (deload parziale)", "rir": "3", "kg": "Stesso peso, meno serie", "nota": "Recupero attivo" },
+    { "settimane": "10–11", "serie": "Regime (100%)", "rir": "2", "kg": "Progressione lenta", "nota": "Consolida tecnica" },
+    { "settimane": "12", "serie": "Regime (100%)", "rir": "2", "kg": "Ultima settimana utile T1", "nota": "Picco volume trimestre" },
+    { "settimane": "13", "serie": "−40% (deload)", "rir": "4–5", "kg": "Leggero", "nota": "Chiusura trimestre · poi T2" }
+  ],
+  "ingressoGraduale": {
+    "settimane": "1–4",
+    "rir": "4→3 (mai sotto RIR 3 al inizio)",
+    "volume": "2 serie/esercizio. Fondamentali *: al massimo 3 serie da sett. 4. Gambe sempre 2 serie.",
+    "durata": "45–55 min target",
+    "nota": "Neofita: la palestra si impara piano. Se compare dolore lombare: stop. Ok medico/fisioterapista prima di iniziare."
+  },
+  "periodizzazione": [
+    {
+      "fase": "Avvio neofita",
+      "settimane": "1–2",
+      "rir": "4",
+      "obiettivo": "Tecnica macchine · 2 serie/esercizio · zero ego"
+    },
+    {
+      "fase": "Costruzione volume",
+      "settimane": "3–4",
+      "rir": "3–4",
+      "obiettivo": "2–3 serie · aggiungi volume, non kg"
+    },
+    {
+      "fase": "Salita volume",
+      "settimane": "5–6",
+      "rir": "3",
+      "obiettivo": "Avvicinamento al regime scheda"
+    },
+    {
+      "fase": "Regime trimestre",
+      "settimane": "7–8",
+      "rir": "2–3",
+      "obiettivo": "100% serie scheda · kg solo se rep pulite"
+    },
+    {
+      "fase": "Scarico parziale",
+      "settimane": "9",
+      "rir": "3",
+      "obiettivo": "−25% serie (volume lavoro)"
+    },
+    {
+      "fase": "Consolidamento volume",
+      "settimane": "10–12",
+      "rir": "2",
+      "obiettivo": "Regime pieno · picco volume T1"
+    },
+    {
+      "fase": "Deload trimestre",
+      "settimane": "13",
+      "rir": "4–5",
+      "obiettivo": "−40% serie · chiusura T1 → si passa a T2"
+    }
+  ],
+  "recuperi": [
+    {
+      "tipologia": "Fondamentali macchina *",
+      "recupero": "120–150 sec"
+    },
+    {
+      "tipologia": "Complementari",
+      "recupero": "90–120 sec"
+    },
+    {
+      "tipologia": "Isolamenti",
+      "recupero": "60–75 sec"
+    }
+  ],
+  "regoleBlocco": {
+    "sett1_2": [
+      "2 serie per esercizio",
+      "RIR 4 · pesi leggeri",
+      "Impara le macchine, non contare i kg"
+    ],
+    "sett3_4": [
+      "2–3 serie · RIR 3–4",
+      "Aggiungi 1 serie solo sui fondamentali *",
+      "Gambe restano 2 serie"
+    ],
+    "sett5_8": [
+      "Salita volume fino al regime scheda (100% serie)",
+      "RIR 3→2 · kg quasi fermo o +1 tacca macchina"
+    ],
+    "sett9": [
+      "−25% serie (meno volume lavoro)",
+      "RIR 3 · stessi kg"
+    ],
+    "sett10_12": [
+      "Regime pieno · picco volume trimestre",
+      "RIR 2 · +kg solo se tutte le rep pulite"
+    ],
+    "sett13": [
+      "−40% serie · deload obbligatorio",
+      "RIR 4–5 · prepara Trimestre 2"
+    ]
+  },
+  "sessioni": {
+    "ab": {
+      "nome": "A+B · Spinta parte alta + gambe leggero",
+      "codice": "AB",
+      "accoppiamento": "A + B",
+      "notaSeduta": "Priorità petto, spalle e tricipiti. Gambe solo mantenimento (2 esercizi). Upper per primo, gambe alla fine. ~65% volume seduta = parte alta.",
+      "durataMinuti": {
+        "obiettivo": 70,
+        "tetto": 85
+      },
+      "esercizi": [
+        {
+          "nome": "Chest press inclinata macchina",
+          "gruppo": "Petto",
+          "serie": 3,
+          "ripetizioni": "8–10",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-chest",
+          "note": "Fondamentale petto * · regime T1 sett. 8–12. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Chest press piana macchina",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "8–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "2",
+          "figura": "fig-chest",
+          "note": "Volume petto; escursione controllata.",
+          "progressione": false
+        },
+        {
+          "nome": "Croci ai cavi / Pec deck",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "3→2",
+          "figura": "fig-croci",
+          "note": "Tensione continua; niente iperestensione spalle.",
+          "progressione": false
+        },
+        {
+          "nome": "Shoulder press macchina seduto",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "8–10",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-lento",
+          "note": "Spalle * · regime T1 sett. 8–12. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Alzate laterali manubri o cavo",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-alzate",
+          "note": "Deltoide laterale; carico moderato.",
+          "progressione": false
+        },
+        {
+          "nome": "Pushdown tricipiti al cavo",
+          "gruppo": "Tricipiti",
+          "serie": 2,
+          "ripetizioni": "10–15",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "3→2",
+          "figura": "fig-pushdown",
+          "note": "Gomiti fermi; schiena neutra.",
+          "progressione": false
+        },
+        {
+          "nome": "Leg press 45°",
+          "gruppo": "Quadricipiti",
+          "serie": 2,
+          "ripetizioni": "10–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "2–3",
+          "figura": "fig-pressa",
+          "note": "Gambe mantenimento; schiena ben appoggiata, piedi alti, ROM moderato.",
+          "progressione": false
+        },
+        {
+          "nome": "Leg curl seduto",
+          "gruppo": "Femorali",
+          "serie": 2,
+          "ripetizioni": "10–12",
+          "peso": "—",
+          "recupero": "90 sec",
+          "rir": "2",
+          "figura": "fig-legcurl",
+          "note": "Femorali isolati; zero carico lombare.",
+          "progressione": false
+        },
+        {
+          "nome": "Dead bug",
+          "gruppo": "Core anti-estensione",
+          "serie": 2,
+          "ripetizioni": "8–10/lato",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-catchball",
+          "note": "Core sicuro per lombare; lombare premuta a terra.",
+          "progressione": false
+        }
+      ]
+    },
+    "bc": {
+      "nome": "B+C · Tirata parte alta + gambe leggero",
+      "codice": "BC",
+      "accoppiamento": "B + C",
+      "notaSeduta": "Priorità dorso, bicipiti e deltoide posteriore. Upper per primo. Gambe: extension + polpacci (mantenimento).",
+      "durataMinuti": {
+        "obiettivo": 70,
+        "tetto": 85
+      },
+      "esercizi": [
+        {
+          "nome": "Lat machine presa neutra",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "8–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-lat-neutro",
+          "note": "Fondamentale schiena * · regime T1. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Rematore macchina (petto appoggiato)",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "8–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-rematore",
+          "note": "Schiena * · petto appoggiato. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Reverse pec deck / Face pull",
+          "gruppo": "Deltoide posteriore",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "3→2",
+          "figura": "fig-reverse-pec",
+          "note": "Postura e spalle posteriori; aiuta la schiena.",
+          "progressione": false
+        },
+        {
+          "nome": "Curl manubri seduto",
+          "gruppo": "Bicipiti",
+          "serie": 2,
+          "ripetizioni": "10–12",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "3→2",
+          "figura": "fig-curl-ez",
+          "note": "Schiena appoggiata; gomiti fermi.",
+          "progressione": false
+        },
+        {
+          "nome": "Curl al cavo basso",
+          "gruppo": "Bicipiti",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-curl-mart",
+          "note": "Finisher bicipiti.",
+          "progressione": false
+        },
+        {
+          "nome": "Leg extension",
+          "gruppo": "Quadricipiti",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "90 sec",
+          "rir": "2–3",
+          "figura": "fig-legext",
+          "note": "Gambe mantenimento; schiena al sedile.",
+          "progressione": false
+        },
+        {
+          "nome": "Calf raise seduto",
+          "gruppo": "Polpacci",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-polpacci",
+          "note": "Polpacci; volume ridotto.",
+          "progressione": false
+        },
+        {
+          "nome": "Pallof press al cavo",
+          "gruppo": "Core anti-rotazione",
+          "serie": 2,
+          "ripetizioni": "10–12/lato",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-catchball",
+          "note": "Core stabile; protegge la lombare.",
+          "progressione": false
+        }
+      ]
+    },
+    "ac": {
+      "nome": "A+C · Parte alta completa",
+      "codice": "AC",
+      "accoppiamento": "A + C",
+      "notaSeduta": "Seduta solo upper: petto, schiena, spalle e braccia. Nessuna gamba. Massimo stimolo parte alta (~85% volume seduta).",
+      "durataMinuti": {
+        "obiettivo": 65,
+        "tetto": 80
+      },
+      "esercizi": [
+        {
+          "nome": "Lat machine presa larga",
+          "gruppo": "Dorsali",
+          "serie": 2,
+          "ripetizioni": "8–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-lat",
+          "note": "Dorsali ampiezza * · regime T1. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Rematore macchina presa stretta",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "10–12",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "2",
+          "figura": "fig-rematore",
+          "note": "Spessore schiena; petto appoggiato.",
+          "progressione": false
+        },
+        {
+          "nome": "Chest press inclinata macchina",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "8–10",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "3→2",
+          "figura": "fig-chest",
+          "note": "Seconda esposizione petto * · regime T1. Sett. 1–4: 2 serie.",
+          "progressione": true
+        },
+        {
+          "nome": "Croci ai cavi",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "2",
+          "figura": "fig-croci",
+          "note": "Petto; pausa in chiusura.",
+          "progressione": false
+        },
+        {
+          "nome": "Shoulder press macchina",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "8–10",
+          "peso": "—",
+          "recupero": "120 sec",
+          "rir": "2",
+          "figura": "fig-lento",
+          "note": "Spalle; seduto e appoggiato.",
+          "progressione": false
+        },
+        {
+          "nome": "Alzate laterali",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-alzate",
+          "note": "Deltoide laterale.",
+          "progressione": false
+        },
+        {
+          "nome": "Pushdown tricipiti",
+          "gruppo": "Tricipiti",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "2",
+          "figura": "fig-pushdown",
+          "note": "Tricipiti.",
+          "progressione": false
+        },
+        {
+          "nome": "Curl Scott / Curl EZ",
+          "gruppo": "Bicipiti",
+          "serie": 2,
+          "ripetizioni": "10–12",
+          "peso": "—",
+          "recupero": "75 sec",
+          "rir": "2",
+          "figura": "fig-curl-scott",
+          "note": "Bicipiti; braccia appoggiate.",
+          "progressione": false
+        },
+        {
+          "nome": "Bird dog",
+          "gruppo": "Core lombare",
+          "serie": 2,
+          "ripetizioni": "8/lato",
+          "peso": "—",
+          "recupero": "60 sec",
+          "rir": "2",
+          "figura": "fig-catchball",
+          "note": "Estensori e stabilità; no iperestensione.",
+          "progressione": false
+        }
+      ]
+    }
+  }
+}
