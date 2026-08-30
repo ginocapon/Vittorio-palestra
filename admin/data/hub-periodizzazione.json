@@ -1,0 +1,27 @@
+{
+  "anni": [
+    {
+      "id": "2026-2027",
+      "label": "2026 – 2027 · Vittorio Full Body",
+      "macrocicloUrl": "/admin/data/macrociclo-2026-2027.json",
+      "periodi": [
+        {
+          "id": "set26-ago27",
+          "label": "Settembre 2026 → Agosto 2027",
+          "descrizione": "Full Body A+B/B+C/A+C · 4×13 sett. · ingresso graduale sett. 1–4 · deload sett. 13/26/39/52"
+        }
+      ]
+    }
+  ],
+  "_nota": "Vittorio 22 anni · ingresso graduale prime 4 settimane.",
+  "profilo": {
+    "nomeStampa": "Vittorio",
+    "eta": 22,
+    "altezzaCm": 160,
+    "livello": "principiante-intermedio",
+    "giorniSettimana": 3,
+    "split": "Full Body · A+B / B+C / A+C",
+    "prioritaVolume": "glutei/femorali prioritari · petto/schiena 2×",
+    "durataSeduta": "60–75 min a seconda della fase"
+  }
+}

@@ -1,0 +1,29 @@
+---
+description: Router skill — carica solo i file necessari al comando (risparmio token)
+alwaysApply: true
+---
+
+# Skill router — Ginevra
+
+**Regola:** non leggere `SKILL.md` intero se basta una sezione di `docs/SKILL-INDEX.md`.
+
+## Sempre
+
+- `.cursor/rules/ai-trasparenza.mdc` — immagini IA
+- `docs/SKILL-INDEX.md` — mappa
+
+## Router
+
+| Se il task riguarda… | Leggi |
+|---------------------|--------|
+| Principi, split AB/AC/CB, 3 giorni, parte alta 52–62%, glutei, 75–90 min | `SKILL.md` §2–4 |
+| Spiegazione fasi / pagina Ciclo | `SKILL.md` §5 + `/ciclo/` |
+| Privacy, cookie, Garante, GDPR | `SKILL.md` Privacy + `/privacy/` `/cookie/` |
+| Una delle 4 fasi, intensità, recupero, deload | `SKILL.md` §5 + JSON macrociclo |
+| PDF / scheda / kg / nome stampa | `SKILL.md` §1 e §6 |
+| Foto ritratto / AI Act | `SKILL.md` apertura + ai-trasparenza |
+| JSON / verifica | `admin/data/*.json` + `tools/verifica-macrociclo.mjs` |
+| CSS / bug UI | file toccati; Panel Relief se nuovo riquadro |
+| Domanda breve | risposta diretta; indice se serve un dettaglio |
+
+Non caricare skill Gino (PERFORMANCE, VENERDI, LANDING, Guardian, diario, newsletter): **non esistono in questo repo**.
