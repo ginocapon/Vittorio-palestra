@@ -7,6 +7,6 @@ Scheda allenamento ricostruzione corporea per **Vittorio** (54 anni, 180 cm, 78 
 - **Schiena:** 2 ernie lombari — solo macchine e cavi
 - **Nutrizione:** surplus leggero (+200–300 kcal), non calare peso
 
-Sito: `https://ginocapon.github.io/vittorio-palestra/`
+Sito: `https://ginocapon.github.io/Vittorio-palestra/`
 
 Schema e UI copiati da [ginevra](https://github.com/ginocapon/ginevra).

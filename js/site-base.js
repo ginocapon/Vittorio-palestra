@@ -1,6 +1,6 @@
 ﻿/**
  * Prefisso sito: '' in locale o su dominio root,
- * '/vittorio-palestra' su GitHub Pages (ginocapon.github.io/vittorio-palestra/).
+ * '/Vittorio-palestra' su GitHub Pages (ginocapon.github.io/Vittorio-palestra/).
  */
 (function () {
   "use strict";

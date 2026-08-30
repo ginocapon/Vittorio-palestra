@@ -73,4 +73,4 @@ node tools/sync-vittorio-trimestri.mjs   # 4 trimestri → macrociclo
 node tools/sync-blocco1-macrociclo.mjs   # solo T1 da blocco-1-fase1.json
 ```
 
-Deploy: `https://ginocapon.github.io/vittorio-palestra/`
+Deploy: `https://ginocapon.github.io/Vittorio-palestra/`

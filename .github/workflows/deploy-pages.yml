@@ -22,25 +22,38 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Prepare site artifact
+        env:
+          BASE: /Vittorio-palestra
         run: |
+          set -euo pipefail
           mkdir -p _site
           tar -C . --exclude='.git' --exclude='.github' --exclude='_site' \
             --exclude='node_modules' --exclude='tools' --exclude='.cursor' \
             --exclude='package.json' --exclude='SKILL.md' --exclude='docs' \
             --exclude='README.md' -cf - . | tar -C _site -xf -
-          # GitHub project pages: /vittorio-palestra/…
-          find _site -name '*.html' -print0 | xargs -0 sed -i \
-            -e 's|href="/css/|href="/vittorio-palestra/css/|g' \
-            -e 's|href="/admin/|href="/vittorio-palestra/admin/|g' \
-            -e 's|href="/js/|href="/vittorio-palestra/js/|g' \
-            -e 's|src="/js/|src="/vittorio-palestra/js/|g' \
-            -e 's|src="/admin/|src="/vittorio-palestra/admin/|g' \
-            -e 's|href="/ciclo/|href="/vittorio-palestra/ciclo/|g' \
-            -e 's|href="/trasparenza-ai/|href="/vittorio-palestra/trasparenza-ai/|g' \
-            -e 's|href="/privacy/|href="/vittorio-palestra/privacy/|g' \
-            -e 's|href="/cookie/|href="/vittorio-palestra/cookie/|g' \
-            -e 's|href="/favicon|href="/vittorio-palestra/favicon|g' \
-            -e 's|href="/"|href="/vittorio-palestra/"|g'
+
+          test -f _site/index.html
+
+          # GitHub project pages: https://ginocapon.github.io/Vittorio-palestra/
+          find _site \( -name '*.html' -o -name '*.js' \) -print0 | xargs -0 sed -i \
+            -e "s|href=\"/css/|href=\"${BASE}/css/|g" \
+            -e "s|src=\"/css/|src=\"${BASE}/css/|g" \
+            -e "s|href=\"/admin/|href=\"${BASE}/admin/|g" \
+            -e "s|href=\"/js/|href=\"${BASE}/js/|g" \
+            -e "s|src=\"/js/|src=\"${BASE}/js/|g" \
+            -e "s|src=\"/admin/|src=\"${BASE}/admin/|g" \
+            -e "s|href=\"/ciclo/|href=\"${BASE}/ciclo/|g" \
+            -e "s|href=\"/schede/|href=\"${BASE}/schede/|g" \
+            -e "s|href=\"/allenamenti/|href=\"${BASE}/allenamenti/|g" \
+            -e "s|href=\"/trasparenza-ai/|href=\"${BASE}/trasparenza-ai/|g" \
+            -e "s|href=\"/privacy/|href=\"${BASE}/privacy/|g" \
+            -e "s|href=\"/cookie/|href=\"${BASE}/cookie/|g" \
+            -e "s|href=\"/favicon|href=\"${BASE}/favicon|g" \
+            -e "s|src=\"/favicon|src=\"${BASE}/favicon|g" \
+            -e "s|href=\"/\"|href=\"${BASE}/\"|g"
+
+          echo "Built _site with base ${BASE}"
+          ls -la _site/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
