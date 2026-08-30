@@ -687,8 +687,13 @@
   height: auto;
   aspect-ratio: 2 / 3;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 15%;
   border-radius: 12px;
+}
+.atleta-hero__photo .fig-credit {
+  margin: 0.5rem 0 0;
+  font-size: 0.72rem;
+  color: var(--muted);
 }
 .atleta-hero__dati .tagline {
   color: var(--accent);
