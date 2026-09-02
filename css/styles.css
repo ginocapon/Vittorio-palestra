@@ -55,7 +55,15 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+
+/* Scroll — su touch usa il momentum nativo (stile iPhone); smooth solo desktop */
+html {
+  scroll-behavior: auto;
+  -webkit-text-size-adjust: 100%;
+}
+@media (hover: hover) and (pointer: fine) {
+  html { scroll-behavior: smooth; }
+}
 body {
   margin: 0;
   font-family: var(--font);
@@ -63,6 +71,24 @@ body {
   color: var(--text);
   line-height: 1.65;
   font-size: 1.05rem;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+}
+
+/* backdrop-filter su grandi blocchi scrollabili blocca lo scroll su iOS Safari */
+@media (hover: none) and (pointer: coarse) {
+  .page-veiled :is(
+    .card, .benefit-card, .proof-stat, .diario-list__link, .hub-card,
+    .scheda-periodo-card, .newsletter-cta, .session-card, .tsb-module,
+    .disclaimer, .metabolic-block, .session-log, .prose, .panel-raised,
+    .ciclo-toc, .ciclo-fase, .ciclo-principi, .exercise-card, .session-panel,
+    .admin-fase__ir, .admin-card, .month-hub-card
+  ) {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
 }
 
 .skip-link {
@@ -3291,8 +3317,12 @@ body.theme-allenamenti .session-card__badge {
   padding: 1rem 0;
   transform: translateY(100%);
   transition: transform 0.35s ease;
+  pointer-events: none;
 }
-.cookie-banner.is-visible { transform: translateY(0); }
+.cookie-banner.is-visible {
+  transform: translateY(0);
+  pointer-events: auto;
+}
 .cookie-banner__inner {
   display: flex;
   flex-wrap: wrap;
@@ -3343,9 +3373,14 @@ body.theme-allenamenti .session-card__badge {
   padding: 1rem;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.25s ease, visibility 0.25s;
 }
-.cookie-modal.is-visible { opacity: 1; visibility: visible; }
+.cookie-modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 .cookie-modal__backdrop {
   position: absolute;
   inset: 0;

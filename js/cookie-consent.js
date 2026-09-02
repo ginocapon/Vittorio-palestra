@@ -36,6 +36,14 @@
   function hide() {
     if (banner) banner.classList.remove("is-visible");
     if (modal) modal.classList.remove("is-visible");
+    document.body.style.overflow = "";
+  }
+
+  function openModal() {
+    if (modal) {
+      modal.classList.add("is-visible");
+      document.body.style.overflow = "hidden";
+    }
   }
 
   function injectFooter() {
@@ -113,13 +121,9 @@
       "</div></div>";
     document.body.appendChild(modal);
     modal.addEventListener("click", function (ev) {
-      if (ev.target.getAttribute("data-close")) modal.classList.remove("is-visible");
+      if (ev.target.getAttribute("data-close")) hide();
     });
     document.getElementById("mb-m-save").addEventListener("click", function () { save("necessari"); });
-  }
-
-  function openModal() {
-    if (modal) modal.classList.add("is-visible");
   }
 
   function start() {
