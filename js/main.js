@@ -1,4 +1,22 @@
 (function () {
+  "use strict";
+
+  /* Smooth ancore solo desktop — su touch resta lo scroll nativo iPhone */
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches &&
+      window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.addEventListener("click", function (ev) {
+      var link = ev.target.closest('a[href^="#"]');
+      if (!link) return;
+      var hash = link.getAttribute("href");
+      if (!hash || hash === "#") return;
+      var target = document.querySelector(hash);
+      if (!target) return;
+      ev.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.pushState(null, "", hash);
+    });
+  }
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".site-nav");
   if (toggle && nav) {
